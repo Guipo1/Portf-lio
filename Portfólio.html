@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guilherme Pottratz</title>
+  </head>
+  <body>
+    <header>
+      <button class="botao">Quem sou</button>
+      <button class="botao">Qualidades</button>
+      <button class="botao">Curiculo</button>
+      <button class="botao">Contato</button>
+    </header>
+    <main>
+      <div id="caixanome">Olá, sou o Guilherme Pottratz</div>
+      <img
+        src="c://guilhermepottratz/documentos/portifolio/imagemprincipal.jpeg"
+        id="imagemprincipal"
+      />
+      <nav id="nav1">Quem sou</nav>
+      <article id="article1">
+        <p>
+          Tenho 16 anos, gosto muito da área de TI justamente pelo fato de
+          aprender coisas novas e desafiadoras.
+        </p>
+      </article>
+      <img
+        src="c://guilhermepottratz/documentos/portifolio/imagemsecundaria.jpeg"
+        id="imagemsecundaria"
+      />
+      <h1><u id="qualidades">Qualidades</u></h1>
+      <article id="article2">
+        <ul id="caixa1">
+          <li><span>Dedicado</span></li>
+          <li><span> Inteligente</span></li>
+          <li><span> Empenhado</span></li>
+          <li><span> Organizado</span></li>
+        </ul>
+        <ul id="caixa2">
+          <li><span> Prestativo</span></li>
+          <li><span>Focado</span></li>
+          <li><span> Responsavel</span></li>
+          <li><span> Prestativo</span></li>
+        </ul>
+      </article>
+      <h1><u id="curiculo">Curiculo</u></h1>
+      <article id="article3">
+        <table id="tabela1">
+          <tr>
+            <td class="td1">1</td>
+            <td>Curso de inglês concluído</td>
+          </tr>
+
+          <tr>
+            <td class="td1">2</td>
+            <td>Terminei o ensino fundamental</td>
+          </tr>
+
+          <tr>
+            <td class="td1">3</td>
+            <td>Colaborei em um projeto sobre inteligência artificial</td>
+          </tr>
+
+          <tr>
+            <td class="td1">4</td>
+            <td>Comecei o curso de noções básicas de desenvolvimento</td>
+          </tr>
+        </table>
+      </article>
+    </main>
+    <style>
+      body {
+        background: linear-gradient(to right, #ffffff, #000000);
+        overflow-x: hidden;
+        width: 100%;
+      }
+      .botao {
+        position: relative;
+        background-color: #d29856;
+        border-radius: 12px;
+        font-weight: bold;
+        margin-left: 6%;
+        width: 18%;
+        padding: 1%;
+        font-size: 20px;
+        height: auto;
+        overflow-wrap: anywhere;
+      }
+      .botao:hover {
+        background-color: rgb(218, 200, 135);
+      }
+      @media screen and (max-width: 714px) {
+        .botao {
+          width: 15%;
+          font-size: 13px;
+        }
+        #article2 {
+          width: fit-content;
+          flex-direction: column;
+        }
+        #caixa1 {
+          font-size: 5px;
+        }
+        #caixa2 {
+          font-size: 5px;
+        }
+      }
+      #caixanome {
+        width: 45%;
+        height: auto;
+        background-color: black;
+        color: orange;
+        position: relative;
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10%;
+        padding: 2%;
+      }
+      #imagemprincipal {
+        width: 30%;
+        height: auto;
+        display: flex;
+        position: relative;
+        float: right;
+      }
+      #nav1 {
+        position: relative;
+        width: 100%;
+        height: fit-content;
+        padding: 2%;
+        background-color: black;
+        margin-top: 15%;
+        font-size: 45px;
+        color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+      }
+      #article1 {
+        position: relative;
+        width: 55%;
+        height: 60%;
+        background-color: white;
+        display: flex;
+        padding: 5%;
+        z-index: 0;
+        font-size: 45px;
+        align-items: center;
+        justify-content: center;
+      }
+      #imagemsecundaria {
+        width: 30%;
+        height: auto;
+        display: flex;
+
+        position: relative;
+        float: right;
+      }
+      #qualidades {
+        font-size: 60px;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        position: relative;
+      }
+      #article2 {
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        position: relative;
+      }
+      #caixa1 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5%;
+        font-size: 40px;
+        color: orange;
+      }
+      #caixa2 {
+        flex-direction: column;
+        display: flex;
+        color: orange;
+        font-size: 40px;
+      }
+      #curiculo {
+        display: flex;
+        font-size: 60px;
+        justify-content: center;
+        position: relative;
+        color: #ffffff;
+      }
+      #article3 {
+        display: flex;
+        position: relative;
+        justify-content: center;
+      }
+      #tabela1 {
+        position: relative;
+        display: flex;
+        font-size: 45px;
+        justify-content: center;
+        border-width: 4px;
+        border-style: dashed;
+        border-color: orange;
+        border-radius: 12px;
+        padding: 3%;
+      }
+      span {
+        color: black;
+        font-size: 40px;
+      }
+      .td1 {
+        background-color: #e8d4bd;
+        width: 5%;
+        height: 5%;
+      }
+      td {
+        border-bottom: 4px dashed orange;
+      }
+    </style>
+  </body>
+</html>
+<!--
+ Parágrafo
+ Cabeçalho
+ Mudança de linha
+ Negrito, itálico e Sublinhado
+ Inserir ao menos uma imagem
+ Inserir uma tabela
+ Inserir, ao menos, um botão
+ O LABEL (Nome exibido na Guia da Página) deverá ser seu nome completo.
+ Use listas ordenadas ou não ordenadas
+ As formatações em CSS deverão inserir cor de fundo de tela, moldura, cor e tamanho de fonte, alinhamento de texto.
+ -->
