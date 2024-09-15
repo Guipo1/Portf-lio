@@ -1,6 +1,10 @@
-const express = require("express")
+const express = require('express');
 const app = express();
-app.get("/", (req, res) => {
-res.send("ola")
-         })
-app.listen(8080, ()=> console.log("servidor rodando"))
+const path = require('path');
+app.get('/', (req,res) => {
+res.sendFile(path.join(__dirname, 'Portfólio.html'));
+});
+app.get('/style.css', (req, res) => {
+res.sendFile(path.join(__dirname, 'style.css'));
+});
+app.listen(3000, () => console.log('rodando'));
